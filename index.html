@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>index.html</title>
+	<link href="css/styles_index.css" type="text/css" rel="stylesheet" />
+	<header class="banner">
+	<img src="WebsiteImages/dndbanner.png" fetchpriority="high" alt="Website banner">
+<!--- FOR fetchpriority: a lot of the fetch priorities was organized by the fact of how I think they'd be important for, IE the banner being the most important to load before anything else. -->
+</header>
+</head>
+<a href="comparison.html" style="color:#CFC4CC;background-color:#420D07"> <b>Click here for Comparison Table</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="favoritemonsters.html" style="color:#CFC4CC;background-color:#420D07"> <b>Click here for my Favorite Monsters</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="ttrpgopinion.html" style="color:#CFC4CC;background-color:#420D07"> <b>Click here for my opinion on D&D as a TTRPG.</b></a>
+<body>
+	<h1 style="text-align:center;background-color:#420D07"> Welcome to my personal <abbr title="Dungeons and Dragons">D&D</abbr> website! </h1>
+<!--- FOR <abbr>: similarly to abbreviation, only two were used for the index. D&D and TTRPG, since those are short-term slangs for Dungeons and Dragons and Tabletop Roleplaying Game, which is what I found use for those. -->
+	
+	<h2 style="text-align:center;background-color:#420D07"> You'll find here a few things, primarily personal opinions and views on D&D as a whole. </h2>
+	
+	<p style="text-align:center;background-color:#420D07"> <b>Let's layout the most important thing first, what is D&D?</b> <br> <br>
+	D&D more appropriately called Dungeons and Dragons is a <abbr title="Tabletop Role-Playing Game">TTRPG</abbr> where players create characters and embark on adventures in a fantasy world. <br>
+	I've grown with D&D over the years, starting at highschool around freshman year when I met a few people in Gym class that spoke of this game, previously beforehand my only TTRPG experience was pathfinder, so I was curious what D&D was like.
+	</p>
+	
+	<p style="text-align:center;background-color:#420D07"> <b>So what am I gonna expect?</b> <br> <br>
+		The page you're currently viewing has three DnD characters I've made over the years. It also contains links above to my favorite monsters, a comparison table of the goods and bads of D&D, and my personal opinion on the TTRPG as a whole whilst suggesting a few alternatives just to not burn out. </p>
+
+<div class="center">
+<p style="text-align:center;background-color:#420D07"> <b> Here's one of my few favorite D&D characters I've created throughout the years.</b> </p>
+	<img src="WebsiteImages/BragrakuOC.png" fetchpriority="low" alt="My Lizardfolk Barbarian D&D Character" class="center" width="auto" height="auto">
+		<figcaption style ="color:#CFC4CC;text-align:center;background-color:#420D07"> His name is Bragraku, He's a lizardfolk Barbarian. A creature of primitive thought and utilizing his rage to kill the threat, a very hardcore survivalist sort of character, dimwitted naturally. <br>
+			A High Strength and Constitution, yet a low Intelligence and Wisdom score.</figcaption>
+			</div>
+
+<div class="center">
+<p style="text-align:center;background-color:#420D07"> <b> Another character I've made and wish for you to know. This one is a more recent character.</b> </p>
+	<img src="WebsiteImages/thikutdobardnd.png" fetchpriority="low" alt="My Dwarf Artificer D&D Character" width="auto" height="auto" style="position:relative;">
+		<figcaption style ="color:#CFC4CC;text-align:center;background-color:#420D07"> His name is Thikut-Dobar, a Dwarf Artificer. Artificers are known for creating magical items and are more intelligent orientated characters, Thikut-Dobar is a prideful Dwarf who managed to help his party through encounters and incidents without much regard to his own safety. <br>
+		A High Intelligence and Wisdom Score. Yet his Charisma and Dexterity scores are incredibly lacking. </figcaption>
+			</div>
+
+<div class="center">
+<p style="text-align:center;background-color:#420D07"> <b> The last character I'll introduce before I let you click any of the links above.</b> </p>
+	<img src="WebsiteImages/gapipodnd.png" fetchpriority="low" alt="My Ratfolk Barbarian D&D Character" width="800" height="800" style="position:relative;">
+		<figcaption style ="color:#CFC4CC;text-align:center;background-color:#420D07"> His name is Gapipo, a Ratfolk Barbarian. Similarly to Bragraku, he's dimwitted mostly due to experimentation, sadly I never got to use him yet though he's ready for whichever campaign he's allowed to exist within. <br>
+		A High Strength and Constitution Score. Yet his Intelligence and Wisdom scores are incredibly lacking like a true barbarian. </figcaption>
+			</div>
+
+	<h2 style="text-align:center;background-color:#420D07"> Below is a incredibly simple form for creating D&D characters. Just something to put down maybe to copy paste onto your actual sheet, etc. </h2>
+
+<div style="color:#CFC4CC;text-align:center;background-color:#420D07">
+  <h3>D&D Character Name, Race, and Class</h3>
+  	<label for="character-name">Character Name:</label>
+  	<input type="text";id="character-name";name="character-name";autocapitalize="words">
+  <br><br>
+	<label for="character-race">Race:</label>
+  	<input type="text";id="character-race";name="character-race";autocapitalize="words">
+  <br><br>
+  	<label for="character-class">Class:</label>
+  	<input type="text";id="character-class";name="character-class";autocapitalize="words">
+</div>
+<!--- FOR autocapitilize: right so autocapitilize and for cannot be used alone, so i relegated it to making a incredibly nuanced form that lets you type in whatever hoping its based off dnd, it has no functionality outside being able to have text input, autocapitilize should work if you were on mobile or using a virtual keyboard. -->
+
+<!--- FOR for: self-explanatory, the for is assigning whatever i put there to the sheet, so 'for="character-class" is specifically the id that it's connected to.-->
+<div class="logo">
+<img src="WebsiteImages/dndlogo.png" fetchpriority="low" alt="The Logo" width="75px" height="75px">
+<!--- FOR fetchpriority: hence why the footer image (the dnd dice) and my character art was low priority since it saves on performance, because i didn't care when or how fast it was loaded onto the page, i wanted the banner preloaded first, espescially the banner. -->
+</div>
+<footer class="copyRight"> <b>GaibovS All Rights Reserved CIT384</b></footer>
+</body>
+</html>
