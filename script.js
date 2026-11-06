@@ -11,10 +11,10 @@ document.getElementById("dateOutput").innerHTML = "Current Date: " + date.toLoca
 // variables set for values, they can be changed to any number and word and the integer/nan should be true or false appropriately
 // the other 4 variables below that arae number conversion variables to convert the input into a number, if possible.
 
-var valueOne = "12";
-var valueTwo = "53.32";
-var valueThree = "goodbye";
-var valueFour = "400";
+var integerString = "12";
+var decimalString = "53.32";
+var invalidString = "goodbye";
+var secondIntegerString = "400";
 
 var convertedOne = Number(integerString);
 var convertedTwo = Number(decimalString);
@@ -36,18 +36,39 @@ document.getElementById("numConValid").innerHTML += 'Original value: "' + second
 
 // Math Operations - Option B
 // variables, change the numbers then the average score/total changes as well
-var gradeOne = 89;
-var gradeTwo = 23;
-var gradeThree = 55;
+var gradeOne = 39;
+var gradeTwo = 33;
+var gradeThree = 75;
 
 // the total score is all 3 grades added together, the average is the same but divided by 3
 var totalScore = gradeOne + gradeTwo + gradeThree;
 var averageScore = totalScore / 3;
 
+// if the average score is 70 or more, then display success messgae, otherwise display failure message.
+// since the baseline is 70, anything below will be elsed into the failure message.
+var passSuccess;
+if (averageScore >= 70) {
+    passSuccess = "Pass";
+} else {
+    passSuccess = "Fail";   
+}
+// similar to above, just more specific/states more than just pass/fail, stating whether the course passed or failed.
+var courseOutcome;
+if (averageScore >= 70) {
+    courseOutcome = "Congratulations! You have passed the course.";
+}
+else {
+    courseOutcome = "Sorry, you have failed the course.";
+}
+
 // toFixed returns the string outcome as two digits in its decimal place 
 document.getElementById("mathOutput").innerHTML =
-    "Grade 1: " + gradeOne + "<br>" +
-    "Grade 2: " + gradeTwo + "<br>" +
-    "Grade 3: " + gradeThree + "<br><br>" +
-    "Total score: " + totalScore + "<br>" +
-    "Average score: " + averageScore.toFixed(2);
+    "Assignment 1: " + gradeOne + "<br>" +
+    "Assignment 2: " + gradeTwo + "<br>" +
+    "Assignment 3: " + gradeThree + "<br><br>" +
+    "Total Grade Score: " + totalScore + "<br>" +
+    "Grade: " + averageScore.toFixed(2) + "<br>" +
+// pass/fail identifies if the average score (the grade) is more than 70 (a C), if its 70 or up
+// then the scrpt will say good job, 69 and below it'll say you failed.
+    "Pass/Fail: " + passSuccess + "<br>" +
+    "Course Outcome: " + courseOutcome;
