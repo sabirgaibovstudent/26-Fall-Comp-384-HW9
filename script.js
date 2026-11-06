@@ -30,13 +30,13 @@ var convertedFour = Number(secondIntegerString);
 // value process for one, two, three, and four, if it is an Integer, 
 // it is true, if it is not an Intenger then it is false, 
 // Similarly if it isn't a number then it'll be true, ie goodbye or any word replacing goodbye will make isNaN be true, vice versa if it is a number then it'll be false
-document.getElementById("numConValid").innerHTML = 'Original value: "' + integerString + '" = Converted: ' +convertedOne + " | isNaN: " + Number.isNaN(convertedOne) +    " → isInteger: " + Number.isInteger(convertedOne) + "<br><br>";
+document.getElementById("numConValid").innerHTML = 'Original value: "' + integerString + '" = Converted: ' +convertedOne + " | isNaN: " + Number.isNaN(convertedOne) +  " → isInteger: " + Number.isInteger(convertedOne) + "<br><br>";
 
-document.getElementById("numConValid").innerHTML += 'Original value: "' + decimalString + '" = Converted: ' + convertedTwo + " | isNaN: " + Number.isNaN(convertedTwo) +" → isInteger: " + Number.isInteger(convertedTwo) + "<br><br>";
+document.getElementById("numConValid").innerHTML += 'Original value: "' + decimalString + '" = Converted: ' + convertedTwo + " | isNaN: " + Number.isNaN(convertedTwo) + " → isInteger: " + Number.isInteger(convertedTwo) + "<br><br>";
 
 document.getElementById("numConValid").innerHTML += 'Original value: "' + invalidString + '" = Converted: ' + convertedThree + " | isNaN: " + Number.isNaN(convertedThree) + " → isInteger: " + Number.isInteger(convertedThree) + "<br><br>";
 
-document.getElementById("numConValid").innerHTML += 'Original value: "' + secondIntegerString + '" = Converted: ' +  convertedFour + " | isNaN: " + Number.isNaN(convertedFour) + " → isInteger: " + Number.isInteger(convertedFour);
+document.getElementById("numConValid").innerHTML += 'Original value: "' + secondIntegerString + '" = Converted: ' +  convertedFour + " | isNaN: " + Number.isNaN(convertedFour) + " → isInteger: " + Number.isInteger(convertedFour) + "<br><br>";
 
 
 
@@ -70,13 +70,7 @@ else {
 }
 
 // toFixed returns the string outcome as two digits in its decimal place 
-document.getElementById("mathOutput").innerHTML =
-    "Assignment 1: " + gradeOne + "<br>" +
-    "Assignment 2: " + gradeTwo + "<br>" +
-    "Assignment 3: " + gradeThree + "<br><br>" +
-    "Total Grade Score: " + totalScore + "<br>" +
-    "Grade: " + averageScore.toFixed(2) + "<br>" +
+document.getElementById("mathOutput").innerHTML = "Assignment 1: " + gradeOne + "<br>" + "Assignment 2: " + gradeTwo + "<br>" + "Assignment 3: " + gradeThree + "<br><br>" + "Total Grade Score: " + totalScore + "<br>" + "Grade: " + averageScore.toFixed(2) + "<br>" +
 // pass/fail identifies if the average score (the grade) is more than 70 (a C), if its 70 or up
 // then the scrpt will say good job, 69 and below it'll say you failed.
-    "Pass/Fail: " + passSuccess + "<br>" +
-    "Course Outcome: " + courseOutcome;
+"Pass/Fail: " + passSuccess + "<br>" + "Course Outcome: " + courseOutcome;
