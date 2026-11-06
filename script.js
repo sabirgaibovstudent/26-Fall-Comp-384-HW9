@@ -1,2 +1,53 @@
+// Display Current Date
+
+// getElementbByID allows me to call the elements specific name (such as dateOutput or numConValdid) and it'll call only that specific script to the index html.
+
+// self explanatory, the date is focused on the en-US language and its format is set to month and day are forcefully set to display 2 digits and year is numeric
 var date = new Date();
-document.getElementById("currentDate").innerHTML = "<h2>Current Date: " + date.toLocaleDateString("en-US") + "</h2>";
+document.getElementById("dateOutput").innerHTML = "Current Date: " + date.toLocaleDateString("en-US", {month: "2-digit", day: "2-digit", year: "numeric"});
+
+
+// Number Conversion and Validation
+// variables set for values, they can be changed to any number and word and the integer/nan should be true or false appropriately
+// the other 4 variables below that arae number conversion variables to convert the input into a number, if possible.
+
+var valueOne = "12";
+var valueTwo = "53.32";
+var valueThree = "goodbye";
+var valueFour = "400";
+
+var convertedOne = Number(integerString);
+var convertedTwo = Number(decimalString);
+var convertedThree = Number(invalidString);
+var convertedFour = Number(secondIntegerString);
+
+// value process for one, two, three, and four, if it is an Integer, 
+// it is true, if it is not an Intenger then it is false, 
+// Similarly if it isn't a number then it'll be true, ie goodbye or any word replacing goodbye will make isNaN be true, vice versa if it is a number then it'll be false
+document.getElementById("numConValid").innerHTML = 'Original value: "' + integerString + '" = Converted: ' +convertedOne + " | isNaN: " + Number.isNaN(convertedOne) +    " → isInteger: " + Number.isInteger(convertedOne) + "<br><br>";
+
+document.getElementById("numConValid").innerHTML += 'Original value: "' + decimalString + '" = Converted: ' + convertedTwo + " | isNaN: " + Number.isNaN(convertedTwo) +" → isInteger: " + Number.isInteger(convertedTwo) + "<br><br>";
+
+document.getElementById("numConValid").innerHTML += 'Original value: "' + invalidString + '" = Converted: ' + convertedThree + " | isNaN: " + Number.isNaN(convertedThree) + " → isInteger: " + Number.isInteger(convertedThree) + "<br><br>";
+
+document.getElementById("numConValid").innerHTML += 'Original value: "' + secondIntegerString + '" = Converted: ' +  convertedFour + " | isNaN: " + Number.isNaN(convertedFour) + " → isInteger: " + Number.isInteger(convertedFour);
+
+
+
+// Math Operations - Option B
+// variables, change the numbers then the average score/total changes as well
+var gradeOne = 89;
+var gradeTwo = 23;
+var gradeThree = 55;
+
+// the total score is all 3 grades added together, the average is the same but divided by 3
+var totalScore = gradeOne + gradeTwo + gradeThree;
+var averageScore = totalScore / 3;
+
+// toFixed returns the string outcome as two digits in its decimal place 
+document.getElementById("mathOutput").innerHTML =
+    "Grade 1: " + gradeOne + "<br>" +
+    "Grade 2: " + gradeTwo + "<br>" +
+    "Grade 3: " + gradeThree + "<br><br>" +
+    "Total score: " + totalScore + "<br>" +
+    "Average score: " + averageScore.toFixed(2);

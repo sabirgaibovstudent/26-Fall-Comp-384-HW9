@@ -1,20 +1,29 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>index.html</title>
-</head>
-<body>
-	<h1 style="text-align:center"> CIT 384 - Sabir A. Gaibov - Javascript HW9 Demo </h1>
-	
-	<h1 style="text-align:center"> <b>Date Display</b> </h1>
-	<h4 id="currentDate" style="text-align:center"></h4>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CIT 384 - Sabir A. Gaibov - Javascript HW9 Demo</title>
+  </head>
+  <body>
+    <h1>JavaScript Mini Demo</h1>
 
-	<script src="script.js"></script>
+    <!-- Date Section -->
+    <h2>Date Display</h2>
+    <p id="dateOutput">Date will appear here</p>
 
-	<h2 style="text-align:center"> <b>Number Conversion and Validation </b> </h2>
+    <!-- Number Conversion Section -->
+    <h2>Number Conversion Tests</h2>
+    <div id="numConValid">Results will appear here</div>
 
-<h2 style="text-align:center"> <b> Number Formatting and Math Results </b> </h2>
+    <!-- Math and Formatting Section -->
+    <h2>Math and Number Formatting</h2>
+    <div id="mathOutput">Results will appear here</div>
 
-</body>
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+
+	<!-- also, the reason why it's not saying 'results will appear here' is because its being overwritten by the script, so if it didn't have a functional script assosciated to its ID then
+	 the page would just show each section say 'Results will appear here', because each section has an id assosciated to the script.js file it'll show that specific section of the script.js-->
+  </body>
 </html>
