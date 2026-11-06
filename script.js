@@ -14,7 +14,6 @@ document.getElementById("dateOutput").innerHTML = "Current Date: " + date.toLoca
 // Part 2: Number Conversion
 // ==========================
 
-// Number Conversion and Validation
 // variables set for values, they can be changed to any number and word and the integer/nan should be true or false appropriately
 // the other 4 variables below that arae number conversion variables to convert the input into a number, if possible.
 var integerString = "12";
