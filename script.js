@@ -1,4 +1,6 @@
-// Display Current Date
+// ==========================
+// Part 1: Date Display
+// ==========================
 
 // getElementbByID allows me to call the elements specific name (such as dateOutput or numConValdid) and it'll call only that specific script to the index html.
 
@@ -7,10 +9,14 @@ var date = new Date();
 document.getElementById("dateOutput").innerHTML = "Current Date: " + date.toLocaleDateString("en-US", {month: "2-digit", day: "2-digit", year: "numeric"});
 
 
+
+// ==========================
+// Part 2: Number Conversion
+// ==========================
+
 // Number Conversion and Validation
 // variables set for values, they can be changed to any number and word and the integer/nan should be true or false appropriately
 // the other 4 variables below that arae number conversion variables to convert the input into a number, if possible.
-
 var integerString = "12";
 var decimalString = "53.32";
 var invalidString = "goodbye";
@@ -34,7 +40,9 @@ document.getElementById("numConValid").innerHTML += 'Original value: "' + second
 
 
 
-// Math Operations - Option B
+// ==========================
+// Part 3 & 4: Math & Formatting + If/Else Section - Option B
+// ==========================
 // variables, change the numbers then the average score/total changes as well
 var gradeOne = 39;
 var gradeTwo = 33;
